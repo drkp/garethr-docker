@@ -23,7 +23,7 @@ class docker::repos {
           key               => $docker::package_key,
           key_source        => $docker::package_key_source,
           required_packages => 'debian-keyring debian-archive-keyring',
-          pin               => '10',
+          #pin               => '10',
           include_src       => false,
         }
         if $docker::manage_package {
